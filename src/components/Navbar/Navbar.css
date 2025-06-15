@@ -1,0 +1,75 @@
+.header {
+  --header-bg-color: #ffffff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+  background-color: var(--header-bg-color);
+  box-shadow: rgba(213, 35, 35, 0.05) 0px 0px 0px 1px;
+}
+
+.container {
+  --max-width: 1312px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.06em;
+}
+
+.Navlist {
+  display: flex;
+  column-gap: 2.9rem;
+}
+
+.Link {
+  --fs-color: #000000;
+
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--fs-color);
+  position: relative;
+}
+
+.Link::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: #000000;
+}
+
+.Link:hover::after {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.Logo {
+  width: 114px;
+  height: 114px;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 100vmax;
+  border: 1.5px solid #000000;
+  padding: 0.75rem 2.1rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  background: transparent;
+  transition: 0.3s background ease-in-out;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
