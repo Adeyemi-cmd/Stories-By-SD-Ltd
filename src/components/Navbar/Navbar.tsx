@@ -32,7 +32,6 @@ export default function Navbar() {
           <Link to={"/"}>
             <img
               src={Logo}
-              loading="lazy"
               alt="Stories-By-SD Ltd"
               className="Logo"
             />
