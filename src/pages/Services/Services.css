@@ -57,6 +57,7 @@
 
 .fs_800 {
   font-size: var(--fs-800);
+    /* font-size: clamp(2rem, 5vw, 4.75rem); */
   line-height: var(--hero-header-line-height);
   font-weight: var(--font-weight200);
   text-align: center;

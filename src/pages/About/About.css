@@ -49,6 +49,7 @@
 }
 
 .right_container1 div p {
+  /* font-size: clamp(1rem, 2vw, 1.5rem); */
   font-size: var(--fs-size-500);
   width: 732px;
   text-transform: capitalize;
@@ -68,7 +69,7 @@
 }
 
 .text_container {
-  width: 523px;
+  max-width: 523px;
 }
 
 .text_container h3 {

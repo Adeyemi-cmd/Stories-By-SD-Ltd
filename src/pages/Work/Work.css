@@ -2,6 +2,8 @@
   /* width && padding*/
   --text-width: 946px;
   --padding: 1rem;
+  --padding2: 2.1rem;
+  --padding3: 3rem;
   --padding-top: 12rem;
 
   --grid-width: 545px;
@@ -15,6 +17,7 @@
 
   /* font-weight */
   --fw-300: 300;
+  --fw-600:600;
 
   /* colors */
   --work-grid-color1: #ff0112;
@@ -26,6 +29,7 @@
   --work-grid-color7: #000000;
   --work-grid-color8: #edf397;
   --small-font-color: #151515;
+  --wok-profile-color:#F9F9F9;
 }
 
 .work_even_container {
@@ -48,7 +52,7 @@
 .work_grid_container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(34.063rem, 100%), 1fr));
   gap: 1em;
   padding-block: 6em;
 }
@@ -108,4 +112,39 @@
   font-size: var(--fs-600);
   font-weight: var(--fw-300);
   text-align: center;
+  padding-bottom: 1.3em;
+}
+
+
+.work_profile_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(34.063rem, 100%), 1fr));
+    gap: 1em;
+    padding-bottom: var(--padding3);
+}
+
+.work_profile {
+   background-color: var(--wok-profile-color);
+   padding: var(--padding2);
+   height: 450px;
+}
+
+.work_profile_text {
+    display: flex;
+    align-items: center;
+    column-gap: 1.3em;
+}
+
+.work_text small {
+    font-size: var(--fs-300);
+}
+
+.work_profile h3 {
+    padding-block: 1.7em;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-600);
+}
+
+.work_profile p {
+    font-size: var(--fs-400);
 }
