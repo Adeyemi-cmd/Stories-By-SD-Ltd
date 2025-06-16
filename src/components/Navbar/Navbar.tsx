@@ -38,7 +38,7 @@ export default function Navbar() {
           </Link>
 
           <Link to={"/contact"}>
-            <button className="button">Get in touch</button>
+            <button className="button btn"><span>Get in touch</span></button>
           </Link>
         </div>
       </header>

@@ -278,3 +278,46 @@ footer {
     background-color: var(--button-color);
     color: var(--general-fs-color2);
 }
+
+
+.footer_button {
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 100vmax;
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.footer_button::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.footer_button:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.footer_button:hover {
+  color: #000000;
+}
+
+.footer_button span {
+  position: relative;
+  z-index: 2;
+}
