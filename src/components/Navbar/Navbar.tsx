@@ -17,12 +17,12 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to={"/Work"} className="Link">
+                <Link to={"/work"} className="Link">
                   Work
                 </Link>
               </li>
               <li>
-                <Link to={"/About"} className="Link">
+                <Link to={"/about"} className="Link">
                   About
                 </Link>
               </li>
@@ -38,7 +38,7 @@ export default function Navbar() {
             />
           </Link>
 
-          <Link to={"/Contact"}>
+          <Link to={"/contact"}>
             <button className="button">Get in touch</button>
           </Link>
         </div>

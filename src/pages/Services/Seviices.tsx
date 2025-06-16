@@ -145,7 +145,7 @@ export default function Services() {
               Ready to see the impact of a strong marketing strategy? Request a
               consultation today!
             </p>
-            <Link to={"/Contact"}>
+            <Link to={"/contact"}>
             <button className="button footer_button">Get in touch</button>
           </Link>
           </div>
