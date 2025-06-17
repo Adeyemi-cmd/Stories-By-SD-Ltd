@@ -126,7 +126,6 @@
 .work_profile {
    background-color: var(--wok-profile-color);
    padding: var(--padding2);
-   height: 450px;
 }
 
 .work_profile_text {
@@ -137,6 +136,7 @@
 
 .work_text small {
     font-size: var(--fs-300);
+    text-decoration: cadetblue;
 }
 
 .work_profile h3 {

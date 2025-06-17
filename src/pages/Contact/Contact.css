@@ -1,0 +1,99 @@
+:root {
+  /* width && padding */
+  --contact-max-width: 1312px;
+  --padding: 1rem;
+  --padding-top: 14rem;
+
+  /* font-size */
+  --contact-fs-900: 5rem;
+  --contact-fs-500: 1.5rem;
+  --contact-fs-400: 1rem;
+  --contact-fs-300: 0.9rem;
+
+  /* font-weight */
+  --fw-300: 300;
+
+  /* color */
+  --form-color: #e0edf5;
+  --input-color: #ffffff;
+}
+
+.contact_max_width_container {
+  width: min(var(--contact-max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+  padding-top: var(--padding-top);
+  padding-bottom: 3em;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.contact_text,
+form {
+  flex-basis: 100%;
+}
+
+.contact_text {
+  max-width: 40.063rem;
+  min-height: 39.438rem;
+}
+
+.contact_text h1 {
+  font-size: var(--contact-fs-900);
+  font-weight: var(--fw-300);
+  line-height: 1.1;
+  padding-block: 1.1em;
+  text-transform: capitalize;
+}
+
+.contact_text p {
+  font-size: var(--contact-fs-500);
+  font-weight: var(--fw-300);
+  color: #151515;
+}
+
+form {
+  max-width: 40.063rem;
+  min-height: 39.375rem;
+  background-color: var(--form-color);
+  padding: 5em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  max-width: 100%;
+  padding: 1em;
+  border: none;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #777777;
+}
+
+form label {
+  padding-block: 1rem;
+  text-transform: uppercase;
+  color: #151515;
+}
+
+textarea {
+  resize: none;
+  max-width: 100%;
+  min-height: 10rem;
+  padding: 1em;
+  border: none;
+  outline: none;
+}
+
+.contact_button {
+  width: auto;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  border-radius: 100vmax;
+  padding: 0.75rem 2.1rem;
+  background: transparent;
+  text-transform: capitalize;
+}

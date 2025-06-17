@@ -41,8 +41,9 @@
   --button-color: #000000;
 }
 
-::selection{
-    background: #00000035;
+::selection {
+  background: #00000035;
+  color: var(--button-color);
 }
 
 .hero_container {
@@ -57,7 +58,7 @@
 
 .fs_800 {
   font-size: var(--fs-800);
-    /* font-size: clamp(2rem, 5vw, 4.75rem); */
+  /* font-size: clamp(2rem, 5vw, 4.75rem); */
   line-height: var(--hero-header-line-height);
   font-weight: var(--font-weight200);
   text-align: center;
@@ -274,11 +275,10 @@ footer {
   text-transform: capitalize;
 }
 
-.footer_button{
-    background-color: var(--button-color);
-    color: var(--general-fs-color2);
+.footer_button {
+  background-color: var(--button-color);
+  color: var(--general-fs-color2);
 }
-
 
 .footer_button {
   background-color: #000000;
@@ -287,6 +287,7 @@ footer {
   border-radius: 100vmax;
   padding: 0.75rem 2rem;
   font-size: 0.875rem;
+  text-transform: capitalize;
   position: relative;
   overflow: hidden;
   transition: color 0.4s ease;

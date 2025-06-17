@@ -146,8 +146,10 @@ export default function Services() {
               consultation today!
             </p>
             <Link to={"/contact"}>
-            <button className="button footer_button"><span>Get in touch</span></button>
-          </Link>
+              <button className="button footer_button">
+                <span>Get in touch</span>
+              </button>
+            </Link>
           </div>
         </div>
       </footer>
