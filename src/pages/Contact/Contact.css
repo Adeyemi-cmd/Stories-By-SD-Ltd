@@ -39,7 +39,8 @@ form {
 }
 
 .contact_text h1 {
-  font-size: var(--contact-fs-900);
+  /* font-size: var(--contact-fs-900); */
+  font-size: clamp(2rem, 5vw, 5rem);
   font-weight: var(--fw-300);
   line-height: 1.1;
   padding-block: 1.1em;
@@ -48,8 +49,10 @@ form {
 
 .contact_text p {
   font-size: var(--contact-fs-500);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: var(--fw-300);
   color: #151515;
+  padding-right: 2em;
 }
 
 form {
@@ -96,4 +99,35 @@ textarea {
   padding: 0.75rem 2.1rem;
   background: transparent;
   text-transform: capitalize;
+  color: #151515 !important;
+  border: 2px solid #151515 !important;
+}
+
+@media (max-width: 50em) {
+  .contact_max_width_container {
+    padding-top: 6rem;
+    flex-direction: column;
+    row-gap: 3em;
+  }
+
+  .contact_text {
+    max-width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+    min-height: auto;
+    padding: 1em;
+  }
+
+  .contact_text {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  form input {
+    padding: .7em;
+    font-size: 1rem;
+   
+  }
 }

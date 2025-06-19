@@ -47,7 +47,7 @@ export default function About() {
         <section>
           <div className="picture_even_container">
             <div className="picture_container">
-              <img src={Picture} alt="Picture"/>
+              <img src={Picture} alt="Picture" />
             </div>
             <div className="text_container">
               <h3>Principal Consultant</h3>

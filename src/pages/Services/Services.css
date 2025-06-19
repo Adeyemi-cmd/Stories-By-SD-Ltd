@@ -57,8 +57,7 @@
 }
 
 .fs_800 {
-  font-size: var(--fs-800);
-  /* font-size: clamp(2rem, 5vw, 4.75rem); */
+  font-size: clamp(2rem, 5vw, 4.75rem);
   line-height: var(--hero-header-line-height);
   font-weight: var(--font-weight200);
   text-align: center;
@@ -75,7 +74,13 @@
 }
 
 .fs_500 {
-  font-size: var(--fs-500);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: var(--font-weight400);
+  text-align: center;
+}
+
+.fs_5001 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: var(--font-weight400);
   text-align: center;
 }
@@ -83,6 +88,7 @@
 .fs_600 {
   text-align: center;
   font-size: var(--fs-600);
+  font-size: clamp(1.9rem, 4vw, 3rem);
   font-weight: var(--font-weight300);
   margin-bottom: 0.75em;
 }
@@ -97,8 +103,9 @@
 .gridbox.one,
 .gridbox.two {
   grid-column: span 2;
-  width: 544px;
-  height: 277px;
+  width: 100%;
+  max-width: 544px;
+  min-height: 277px;
 }
 
 .gridbox.three {
@@ -212,7 +219,7 @@
 }
 
 .work_grid.one h2 {
-  font-size: var(--fs-650);
+  font-size: clamp(2rem, 4vw, 3.775rem);
   font-weight: var(--font-weight300);
   text-transform: capitalize;
 }
@@ -264,13 +271,13 @@ footer {
 }
 
 .footer_width h1 {
-  font-size: var(--fs-700);
+  font-size: clamp(1.9rem, 5vw, 4rem);
   font-weight: var(--font-weight300);
   text-transform: capitalize;
 }
 
 .footer_width p {
-  font-size: var(--fs-500);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: var(--font-weight300);
   text-transform: capitalize;
 }
@@ -321,4 +328,53 @@ footer {
 .footer_button span {
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 50em) {
+  .fs_800,
+  .fs_500 {
+    text-align: left;
+  }
+  .grid_container {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gridbox {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+    grid-column: auto !important;
+  }
+
+  .market_card,
+  .work_grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .bottom_row {
+    flex-direction: column;
+  }
+
+  .marketing_cards_container {
+    flex-direction: column;
+  }
+
+  .work_with_us_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .work_grid.one {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .footer_width h1 {
+    line-height: 1.2;
+  }
 }

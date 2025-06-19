@@ -30,16 +30,18 @@ export default function Navbar() {
           </nav>
 
           <Link to={"/"}>
-            <img
-              src={Logo}
-              alt="Stories-By-SD Ltd"
-              className="Logo"
-            />
+            <img src={Logo} alt="Stories-By-SD Ltd" className="Logo" />
           </Link>
 
           <Link to={"/contact"}>
-            <button className="button btn"><span>Get in touch</span></button>
+            <button className="button btn">
+              <span>Get in touch</span>
+            </button>
           </Link>
+
+          <div className="menu">
+            <i className="bx bx-menu"></i>
+          </div>
         </div>
       </header>
     </>

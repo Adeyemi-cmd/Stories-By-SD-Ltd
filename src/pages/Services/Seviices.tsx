@@ -73,7 +73,7 @@ export default function Services() {
         <section>
           <div className="even_container additional_services">
             <h3 className="fs_600">Additional Services</h3>
-            <p className="fs_500">(Through Trusted Partners)</p>
+            <p className="fs_5001">(Through Trusted Partners)</p>
 
             <div className="marketing_cards_container">
               <div className="market_card one ">
