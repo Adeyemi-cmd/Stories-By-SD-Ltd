@@ -27,7 +27,7 @@ export default function Services() {
           <div className="even_container">
             <h3 className="fs_600"> We specialize in</h3>
             <div className="grid_container">
-              <div className="gridbox one">
+              <div className="gridbox1 one gridbox">
                 <h4>Overarching Marketing and Communications Strategy:</h4>
                 <p>
                   Crafting comprehensive, strategic roadmaps designed to align
@@ -35,7 +35,7 @@ export default function Services() {
                   long-term success through actionable and tailored solutions.
                 </p>
               </div>
-              <div className="gridbox two">
+              <div className="gridbox2 two gridbox">
                 <h4>Content Marketing</h4>
                 <span className="zero_opacity">.</span>
                 <p>
@@ -44,27 +44,24 @@ export default function Services() {
                   support your team in driving conversions effectively.
                 </p>
               </div>
-              {/* Bottom row: wraps 3 cards in a flex container */}
-              <div className="bottom_row">
-                <div className="gridbox three">
-                  <h4>Brand Design</h4>
-                  <span className="zero_opacity">.</span>
-                  <p>Creating compelling and memorable brand identities.</p>
-                </div>
-                <div className="gridbox four">
-                  <h4>Social Media Marketing</h4>
-                  <span className="zero_opacity">.</span>
-                  <p>
-                    Building and nurturing online communities that amplify your
-                    reach.
-                  </p>
-                </div>
-                <div className="gridbox five">
-                  <h4>Search Engine Marketing (SEO + Paid Advertising)</h4>
-                  <p>
-                    Driving visibility and traffic through targeted campaigns.
-                  </p>
-                </div>
+              <div className="gridbox3 three gridbox">
+                <h4>Brand Design</h4>
+                <span className="zero_opacity">.</span>
+                <p>Creating compelling and memorable brand identities.</p>
+              </div>
+              <div className="gridbox4 four gridbox">
+                <h4>Social Media Marketing</h4>
+                <span className="zero_opacity">.</span>
+                <p>
+                  Building and nurturing online communities that amplify your
+                  reach.
+                </p>
+              </div>
+              <div className="gridbox5 five gridbox">
+                <h4>Search Engine Marketing (SEO + Paid Advertising)</h4>
+                <p>
+                  Driving visibility and traffic through targeted campaigns.
+                </p>
               </div>
             </div>
           </div>

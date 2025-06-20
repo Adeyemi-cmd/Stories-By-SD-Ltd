@@ -95,66 +95,57 @@
 
 .grid_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: auto auto; */
   gap: 1em;
+
+  grid-template-areas:
+    "gridbox1 gridbox1 gridbox1 gridbox2 gridbox2 gridbox2"
+    "gridbox3 gridbox3 gridbox4 gridbox4 gridbox5 gridbox5";
 }
 
-.gridbox.one,
-.gridbox.two {
-  grid-column: span 2;
-  width: 100%;
-  max-width: 544px;
-  min-height: 277px;
+.gridbox1 {
+  grid-area: gridbox1;
 }
 
-.gridbox.three {
-  width: 352px;
-  height: 277px;
+.gridbox2 {
+  grid-area: gridbox2;
 }
 
-.gridbox.four {
-  width: 354px;
-  height: 277px;
+.gridbox3 {
+  grid-area: gridbox3;
 }
 
-.gridbox.five {
-  width: 353px;
-  height: 277px;
+.gridbox4 {
+  grid-area: gridbox4;
 }
 
-.bottom_row {
-  display: flex;
-  gap: 1em;
-  grid-column: span 4;
+.gridbox5 {
+  grid-area: gridbox5;
 }
 
-.gridbox.one {
+.gridbox1.one {
   background-color: var(--color-box1);
 }
 
-.gridbox.two {
+.gridbox2.two {
   background-color: var(--color-box2);
 }
 
-.gridbox.three {
+.gridbox3.three {
   background-color: var(--color-box3);
 }
 
-.gridbox.four {
+.gridbox4.four {
   background-color: var(--color-box4);
 }
 
-.gridbox.five {
+.gridbox5.five {
   background-color: var(--color-box5);
 }
 
 .gridbox {
   padding: 2em;
-}
-
-.gridbox.five {
-  padding: 1em;
 }
 
 .gridbox h4 {
@@ -337,17 +328,12 @@ footer {
   }
   .grid_container {
     grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .gridbox {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto;
-    padding: 1.5em;
-    box-sizing: border-box;
-    grid-column: auto !important;
+    grid-template-areas:
+      "gridbox1"
+      "gridbox2"
+      "gridbox3"
+      "gridbox4"
+      "gridbox5";
   }
 
   .market_card,
@@ -355,10 +341,6 @@ footer {
     width: 100% !important;
     max-width: 100% !important;
     height: auto;
-  }
-
-  .bottom_row {
-    flex-direction: column;
   }
 
   .marketing_cards_container {
