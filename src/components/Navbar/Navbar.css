@@ -58,22 +58,6 @@
   cursor: pointer;
 }
 
-/* .button {
-  border-radius: 100vmax;
-  border: 1.5px solid #000000;
-  padding: 0.75rem 2.1rem;
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  background: transparent;
-  transition: 0.3s background ease-in-out;
-}
-
-.button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  cursor: pointer;
-} */
-
 .btn {
   background-color: #fff;
   color: #000;
@@ -117,11 +101,58 @@
   z-index: 2;
 }
 
+.menu_btn {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 100vmax;
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu_btn::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.menu_btn:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.menu_btn:hover {
+  color: #ffffff;
+}
+
+.menu_btn span {
+  position: relative;
+  z-index: 2;
+}
+
 .menu i {
   font-size: 2rem;
 }
 
 .menu {
+  display: none;
+}
+
+.mobile_menu {
   display: none;
 }
 
@@ -150,20 +181,36 @@
     display: none;
   }
 
+  .mobile_menu {
+    display: block;
+  }
+
   .Navlist {
-    display: none;
+    align-items: center;
     flex-direction: column;
-    background-color: var(--header-bg-color);
+    gap: 1em;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.5rem;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     padding: 1rem 2rem;
-    z-index: 999;
+    z-index: 10001;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.4s ease;
   }
 
   .Navlist.active {
     display: flex;
+    transform: translateY(0);
+    max-height: 300px;
+    opacity: 1;
   }
 
   .mobile-btn {
