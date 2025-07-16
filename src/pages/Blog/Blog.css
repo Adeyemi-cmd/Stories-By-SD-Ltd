@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.blog_container {
+  --max-width: 1119px;
+  --padding: 1em;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+  padding-top: 10em;
+}
+
+.blog_header {
+  display: flex;
+  gap: 2em;
+}
+
+.blog_image,
+.blog_text {
+  flex-basis: 100%;
+}
+
+.blog_image img {
+  width: 100%;
+}
+
+.blog_text {
+  padding-top: 7.5rem;
+  padding-left: 5rem;
+  padding-right: 9em;
+}
+
+.blog_text small {
+  font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.blog_text h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.3;
+  font-family: "Manrope", sans-serif;
+}
+
+.blog_text p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  padding-top: 0.3em;
+  padding-bottom: 2.5em;
+  font-family: "Manrope", sans-serif;
+}
+
+.blogbtn {
+  font-size: 0.875rem;
+  display: flex;
+  column-gap: 0.9em;
+  border: none;
+  border-radius: 100vmax;
+  padding: 0.75rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+}
+
+.blogbtn:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blogbtn:hover img {
+  transform: translateY(-7px);
+  transition: all 0.3s ease-in-out;
+}
+
+.latest_news_container {
+  --max-width: 1119px;
+  --padding: 1em;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+
+  padding-block: 5em;
+}
+
+.latest_news_text {
+  border-bottom: 1px solid #0000002c;
+}
+
+.latest_news_text h4 {
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(21.843rem, 100%), 1fr));
+  gap: 2em;
+  padding-top: 3em;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card_image {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  display: block;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.card h3 {
+  padding-block: 1.9rem;
+  font-size: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  padding: 1.5em;
+}
+
+.card_btn {
+  margin: 1.5em 2em;
+  padding: 0.55em 2.5em;
+  border-radius: 100vmax;
+  border: 1px solid #000000;
+  background: none;
+  font-size: 0.75rem;
+  color: #151515 !important;
+}
+
+.card_btn:hover {
+  background-image: radial-gradient(circle, #151515af, #000000, #000000);
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card_link {
+  align-self: flex-end;
+}
+
+/* Blog Post */
+h1 {
+  padding-top: 7em;
+}
+
+@media (max-width: 50em) {
+  .blog_header {
+    flex-direction: column;
+  }
+
+  .blog_text {
+    padding: 0;
+  }
+
+  .blog_text h3 {
+    font-size: 2rem;
+  }
+}

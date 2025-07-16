@@ -29,6 +29,11 @@ export default function Navbar() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link to={"/blog"} className="Link">
+                  Blog
+                </Link>
+              </li>
               <li className="mobile_menu">
                 <Link to="/contact">
                   <button className=" menu_btn">

@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Services from "./pages/Services/Seviices";
 import Work from "./pages/Work/Work";
 import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
+import BlogPost from "./pages/Blog/BlogPost";
 import Contact from "./pages/Contact/Contact";
 
 // Layout component to include ScrollToTop
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog/post",
+        element: <BlogPost />,
       },
       {
         path: "/contact",
