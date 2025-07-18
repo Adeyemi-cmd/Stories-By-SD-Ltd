@@ -218,6 +218,7 @@
 .blogPostBtn {
   margin-bottom: 5em;
   font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
   font-weight: 300;
   display: flex;
   align-items: center;
@@ -225,6 +226,7 @@
   padding: 0.55em 2.5em 0 0;
   background: transparent;
   border: none;
+  color: #151515 !important;
 }
 
 .blogPostBtn:hover {
@@ -247,6 +249,86 @@
   transform: rotate(139deg);
 }
 
+.facescreen {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.why_we_exist {
+  padding-block: 5em;
+  display: flex;
+  gap: 6em;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.why_content {
+  flex: 1;
+  max-width: 58.5rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00000012 transparent;
+}
+
+.why_content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.why_content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.exist h1 {
+  font-size: 2rem;
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 0.5em;
+}
+
+.exist p {
+  padding-block: 1em;
+  font-size: 1.125rem;
+  font-weight: lighter;
+  font-family: "Manrope", sans-serif;
+}
+
+.offer h1 {
+  font-size: 2rem;
+  font-family: "Manrope", sans-serif;
+  padding-block: 1em;
+}
+
+.offer p {
+  font-size: 1.125rem;
+  font-weight: lighter;
+  padding-bottom: 1em;
+  font-family: "Manrope", sans-serif;
+}
+
+ol {
+  padding-left: 4em;
+  padding-bottom: 1em;
+}
+
+ol li {
+  list-style: disc;
+  padding-bottom: 0.5em;
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+}
+
+.footer_blog {
+  background: #f0f9e6;
+}
+
+.footer_blog_con p {
+  font-weight: lighter;
+}
+
+.strong {
+  font-weight: 600;
+}
+
 @media (max-width: 50em) {
   .blog_header {
     flex-direction: column;
@@ -258,5 +340,9 @@
 
   .blog_text h3 {
     font-size: 2rem;
+  }
+
+  .why_we_exist {
+    gap: 2em;
   }
 }
