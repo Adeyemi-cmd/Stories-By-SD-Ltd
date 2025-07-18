@@ -52,7 +52,7 @@ export default function Blog() {
                 looking to stand out in the market and achieve its business
                 objectives.
               </p>
-              <Link to="/blog/post">
+              <Link to="/blog/post" className="blogLink">
                 <button className="blogbtn">
                   Read More <img src={Arrrow} alt="arrow" />
                 </button>
@@ -70,7 +70,11 @@ export default function Blog() {
 
           <div className="card_grid">
             {cards.map((card) => (
-              <div className="card" style={{ background: card.bg_color }}>
+              <div
+                key={card.id}
+                className="card"
+                style={{ background: card.bg_color }}
+              >
                 <HoverEffect>
                   <img src={card.image} alt="" className="card_image" />
                 </HoverEffect>

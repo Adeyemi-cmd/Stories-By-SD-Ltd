@@ -36,14 +36,14 @@
 
 .blog_text h3 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: lighter;
   line-height: 1.3;
   font-family: "Manrope", sans-serif;
 }
 
 .blog_text p {
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: lighter;
   padding-top: 0.3em;
   padding-bottom: 2.5em;
   font-family: "Manrope", sans-serif;
@@ -70,6 +70,10 @@
 .blogbtn:hover img {
   transform: translateY(-7px);
   transition: all 0.3s ease-in-out;
+}
+
+.blogLink {
+  text-decoration: none !important;
 }
 
 .latest_news_container {
@@ -122,6 +126,7 @@
 .card h3 {
   padding-block: 1.9rem;
   font-size: 1.25rem;
+  font-weight: lighter;
   font-family: "Manrope", sans-serif;
   padding: 1.5em;
 }
@@ -147,9 +152,99 @@
   align-self: flex-end;
 }
 
-/* Blog Post */
+/*================= Blog Post==================== */
 .blogpost {
-  padding-top: 7em;
+  --max-width: 1119px;
+  --padding: 1em;
+  --padding-top: 10em;
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+  padding-top: var(--padding-top);
+}
+
+.blog_grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(21.188rem, 100%), 1fr));
+  gap: 1.5em;
+}
+
+.blog_table span {
+  font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  padding-bottom: 1em;
+  display: inline-block;
+}
+
+.blog_table p {
+  font-size: 1.125rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  padding-top: 1em;
+  border-top: 1px solid #0000002c;
+}
+
+.blog_post_text_header {
+  padding-top: 3em;
+}
+
+.blog_post_text_header h1 {
+  font-size: clamp(1.5rem, 5vw, 3.85rem);
+  font-family: "Manrope", sans-serif;
+  font-weight: lighter;
+  line-height: 1.1;
+
+  max-width: 69.313rem;
+  padding-bottom: 1em;
+}
+
+.blog_post_text {
+  padding-bottom: 1.5em;
+}
+
+.blog_post_text_header p {
+  padding-bottom: 2.3em;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: #151515;
+}
+
+.blog_post_text_header p strong {
+  font-weight: 500;
+}
+
+.blogPostBtn {
+  margin-bottom: 5em;
+  font-size: 0.75rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55em 2.5em 0 0;
+  background: transparent;
+  border: none;
+}
+
+.blogPostBtn:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.custume_arrow {
+  background: #000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vmax;
+}
+
+.custume_arrow img {
+  transform: rotate(139deg);
 }
 
 @media (max-width: 50em) {
