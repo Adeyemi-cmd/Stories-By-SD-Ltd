@@ -1,40 +1,40 @@
 import { Link } from "react-router-dom";
 import "./Blog.css";
-import HoverEffect from "../../components/HoverEffect/HoverEffect";
+// import HoverEffect from "../../components/HoverEffect/HoverEffect";
 
-import Blogavatar from "../../assets/images/blogavatar.svg";
-import vemus1 from "../../assets/images/venus1.svg";
-import vemus2 from "../../assets/images/venus2.svg";
-import vemus3 from "../../assets/images/venus3.svg";
+// import vemus1 from "../../assets/images/venus1.svg";
+// import vemus2 from "../../assets/images/venus2.svg";
+// import vemus3 from "../../assets/images/venus3.svg";
+import human from "../../assets/images/human.svg";
 import Arrrow from "../../assets/images/arrowblog.svg";
 
 export default function Blog() {
-  const cards = [
-    {
-      id: 1,
-      image: vemus1,
-      description:
-        "Creating a Consistent Brand Identity Across All Touchpoints",
-      buttonText: "Read",
-      bg_color: "#E9E5F3",
-    },
-    {
-      id: 2,
-      image: vemus2,
-      description:
-        "Creating a Consistent Brand Identity Across All Touchpoints",
-      buttonText: "Read",
-      bg_color: "#F9F9F9",
-    },
-    {
-      id: 3,
-      image: vemus3,
-      description:
-        "Creating a Consistent Brand Identity Across All Touchpoints",
-      buttonText: "Read",
-      bg_color: "#E0EDF5",
-    },
-  ];
+  // const cards = [
+  //   {
+  //     id: 1,
+  //     image: vemus1,
+  //     description:
+  //       "Creating a Consistent Brand Identity Across All Touchpoints",
+  //     buttonText: "Read",
+  //     bg_color: "#E9E5F3",
+  //   },
+  //   {
+  //     id: 2,
+  //     image: vemus2,
+  //     description:
+  //       "Creating a Consistent Brand Identity Across All Touchpoints",
+  //     buttonText: "Read",
+  //     bg_color: "#F9F9F9",
+  //   },
+  //   {
+  //     id: 3,
+  //     image: vemus3,
+  //     description:
+  //       "Creating a Consistent Brand Identity Across All Touchpoints",
+  //     buttonText: "Read",
+  //     bg_color: "#E0EDF5",
+  //   },
+  // ];
 
   return (
     <>
@@ -42,15 +42,19 @@ export default function Blog() {
         <div className="blog_container">
           <div className="blog_header">
             <div className="blog_image">
-              <img src={Blogavatar} alt="Blogavatar" />
+              <img src={human} alt="human" />
             </div>
             <div className="blog_text">
-              <small>SOCIAL MEDIA</small>
-              <h3>The Importance of a Strong Brand Positionint</h3>
+              <h3>
+                Introducing Stories by SD: Your Marketing Partner for Growth
+                Without the Overhead
+              </h3>
               <p>
-                Having a strong brand positioning is crucial for any business
-                looking to stand out in the market and achieve its business
-                objectives.
+                In today's fast-moving digital world, early-stage tech founders
+                and growing businesses face a common dilemma: they need
+                brilliant marketing to scale, but don't have the bandwidth, or
+                the budget for a full in-house team. That's where Stories by SD
+                comes in.
               </p>
               <Link to="/blog/post" className="blogLink">
                 <button className="blogbtn">
@@ -62,7 +66,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="latest_news_container">
           <div className="latest_news_text">
             <h4>Latest news</h4>
@@ -86,7 +90,7 @@ export default function Blog() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

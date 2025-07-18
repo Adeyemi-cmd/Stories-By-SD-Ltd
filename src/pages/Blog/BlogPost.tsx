@@ -55,8 +55,10 @@ export default function blogPost() {
         </div>
 
         <div className="why_we_exist">
-          <div className="why_icon">
-            <h1>icons</h1>
+          <div className="why_socials">
+            <i className="bx bxl-twitter"></i>
+            <i className="bx bxl-facebook-circle"></i>
+            <i className="bx bxl-instagram"></i>
           </div>
           <div className="why_content">
             <div className="exist">
@@ -99,7 +101,7 @@ export default function blogPost() {
             </div>
 
             <div className="offer">
-              <h1>Who We Work Withr</h1>
+              <h1>Who We Work With</h1>
               <p>We're here for:</p>
               <ol role="list">
                 <li>
