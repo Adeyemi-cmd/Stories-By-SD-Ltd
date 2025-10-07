@@ -1,9 +1,8 @@
 import "./Navbar.css";
-// image
-import Logo from "../../assets/logo.svg";
-
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import Logo from "../../assets/logo.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOPen] = useState(false);
@@ -27,6 +26,11 @@ export default function Navbar() {
               <li>
                 <Link to={"/about"} className="Link">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link to={"/impact"} className="Link">
+                  Impact
                 </Link>
               </li>
               <li>

@@ -1,0 +1,60 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --impact-odd-container: 1312px;
+  --impact-even-container: 1116px;
+  --imapct-inline-padding: 1rem;
+
+  --imapact-hero-padding-top: 10rem;
+  --imapact-hero-padding-bottom: 3rem;
+
+  /* font-family */
+  --font-family: "Manrope", sans-serif;
+
+  /* font-sizes */
+  --imapct-h1-fs: 3.75rem;
+  --imapct-h1-fw: 300;
+  --impact-p-fs: 1.125rem;
+  --impact-p-fw: 300;
+}
+
+.impact_even_con {
+  width: min(
+    var(--impact-even-container),
+    100% - var(--imapct-inline-padding) * 2
+  );
+  margin-inline: auto;
+  padding: var(--imapact-hero-padding-top) 0 var(--imapact-hero-padding-bottom);
+}
+
+.impact_hero_con h1 {
+  font-size: var(--imapct-h1-fs);
+  font-weight: var(--imapct-h1-fw);
+  line-height: 72px;
+}
+
+.impact_gatheing_picture {
+  padding-block: 2em;
+}
+
+.impact_gatheing_picture img {
+  width: 100%;
+}
+
+.impact_hero_con p {
+  font-size: var(--impact-p-fs);
+  font-weight: var(--impact-p-fw);
+  font-family: var(--font-family);
+  line-height: 30.6px;
+  letter-spacing: 0.26px;
+}
+
+.impact_action {
+  width: min(
+    var(--impact-even-container),
+    100% - var(--imapct-inline-padding) * 2
+  );
+  margin-inline: auto;
+  padding-block: var(--imapact-hero-padding-bottom);
+}

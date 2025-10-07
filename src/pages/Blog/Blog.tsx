@@ -47,6 +47,7 @@ export default function Blog() {
         "In today's fast-moving digital world, early-stage tech founders and growing businesses face a common dilemma: they need brilliant marketing to scale, but don’t have the bandwidth, or the budget for a full in-house team. That's where Stories by SD comes in.",
       readMoreBtn: "Read More",
       icon: Arrrow,
+      path: "/blog/post-1",
     },
     {
       id: 2,
@@ -57,6 +58,7 @@ export default function Blog() {
         "In today's fast-moving digital world, early-stage tech founders and growing businesses face a common dilemma: they need brilliant marketing to scale, but don’t have the bandwidth, or the budget for a full in-house team. That's where Stories by SD comes in.",
       readMoreBtn: "Read More",
       icon: Arrrow,
+      path: "/blog/post-1",
     },
     {
       id: 3,
@@ -67,6 +69,7 @@ export default function Blog() {
         "In today's fast-moving digital world, early-stage tech founders and growing businesses face a common dilemma: they need brilliant marketing to scale, but don’t have the bandwidth, or the budget for a full in-house team. That's where Stories by SD comes in.",
       readMoreBtn: "Read More",
       icon: Arrrow,
+      path: "/blog/post-1",
     },
     {
       id: 4,
@@ -77,6 +80,7 @@ export default function Blog() {
         "In today's fast-moving digital world, early-stage tech founders and growing businesses face a common dilemma: they need brilliant marketing to scale, but don’t have the bandwidth, or the budget for a full in-house team. That's where Stories by SD comes in.",
       readMoreBtn: "Read More",
       icon: Arrrow,
+      path: "/blog/post-1",
     },
   ];
 
@@ -93,7 +97,7 @@ export default function Blog() {
                 <div className="blog_text">
                   <h1>{eachCon.description}</h1>
                   <p>{eachCon.pText}</p>
-                  <Link to="/blog/post" className="blog_link">
+                  <Link to={eachCon.path} className="blog_link">
                     <button className="blog_btn">
                       {eachCon.readMoreBtn}{" "}
                       <img src={eachCon.icon} alt="arrow_icon" />
